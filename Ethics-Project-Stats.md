@@ -228,7 +228,7 @@ minority head coaches (Steve Wilks, Marvin Lewis, Hue Jackson, Vance
 Joseph, and Todd Bowles) being fired during and after the 2018 season
 and threre was one minority candidate (Brian Flores) hired.
 
-Overall Player Data
+# Overall Player Data
 
 ``` r
 colors <- c("Minority Players" = "red", "White Players" = "blue")
