@@ -3,7 +3,7 @@ Ethics Project
 Sam Waller
 3/2/2020
 
-Introduction
+# Introduction
 
 I studied whether or not the addition of the Rooney Rule has helped to
 solve the lack of diversity among NFL Head Coaches. The Rooney Rule was
@@ -23,15 +23,14 @@ opinion on how the NFL may fix their problem. In order to look at the
 data and create visializations, I downloaded the packages tidyverse and
 readr.
 
-Load Tidyverse and Readr
+## Load Tidyverse and Readr
 
 ``` r
 library(tidyverse)
 library(readr)
 ```
 
-Load
-Data
+## Load Data
 
 ``` r
 Ethics_Project_Stat_Sheet_Programming_Coaches_Data<-read.csv(url("https://raw.githubusercontent.com/samuelwaller88/NFL-Coaching-Hiring-Practices/master/Ethics%20Project%20Stat%20Sheet%20-%20Programming%20Coaches%20Data.csv"))
@@ -67,8 +66,7 @@ Ethics_Project_Stat_Sheet_Coaching_Hiring_Practices<-read.csv(url("https://raw.g
 Ethics_Project_Stat_Sheet_Offense_Defense_Coordinator_Numbers<-read.csv(url("https://raw.githubusercontent.com/samuelwaller88/NFL-Coaching-Hiring-Practices/master/Ethics%20Project%20Stat%20Sheet%20-%20Offense_Defense%20Coordinator%20Numbers.csv"))
 ```
 
-Coaching Hiring
-Data
+## Coaching Hiring Data
 
 ``` r
 minority_white_color <- c("Minority Coaches" = "red", "White Coaches" = "blue","Rooney Rule Instituted in 2003"="gray4")
@@ -228,7 +226,7 @@ minority head coaches (Steve Wilks, Marvin Lewis, Hue Jackson, Vance
 Joseph, and Todd Bowles) being fired during and after the 2018 season
 and threre was one minority candidate (Brian Flores) hired.
 
-# Overall Player Data
+## Overall Player Data
 
 ``` r
 colors <- c("Minority Players" = "red", "White Players" = "blue")
@@ -364,10 +362,10 @@ The difference in the numbers comes from the overall player data being
 more skewed than the individual offensive and defensive player data.
 While both the amount offensive and defensive minority players has
 increased since 2013, it is hard to tell which has seen a greater
-increase without looking a the data of individual positions.
+increase without looking a the data of individual
+positions.
 
-Individual Player
-Data
+## Individual Player Data
 
 ``` r
 colors1 <- c("Quaterback" = "royalblue", "Center" = "red3", "Tight End"="snow4","Cornerback"="black", "Linebacker"="khaki")
@@ -460,10 +458,10 @@ the players. Lastly, I looked at minority cornerbacks who by 2016 made
 up 100% of the cornerback group. With this data, we can see that there
 are position where minority are well represented (Cornerback,
 Linebacker, Tight End) while there other position of offense where
-minorities are poorly represented (Quarterback and Center).
+minorities are poorly represented (Quarterback and
+Center).
 
-2019 NFL Captain
-Data
+## 2019 NFL Captain Data
 
 ``` r
 Captain_Prop_Table_Setup<- Ethics_Project_Stat_Sheet_Programming_Captian_Data %>%
@@ -555,8 +553,7 @@ the last 10 years to see if minorities are represented in those coaching
 positions that they are more likely to be hired for NFL Head Coaching
 Jobs.
 
-NFL Offense and Defense Coordinators
-Data
+## NFL Offense and Defense Coordinators Data
 
 ``` r
 Defense_Coordinator<- Ethics_Project_Stat_Sheet_Offense_Defense_Coordinator_Numbers %>%
@@ -672,7 +669,8 @@ offenisve coordinators were replaced mid year) offensive coordinators
 were minority. This has since regressed to two minority offensive
 coordinators in 2019 out of 30 total offensive coordinators.
 
-Conclusion  
+### Conclusion
+
 While the NFL was able to succeed at first when implementing the Rooney
 Rule in 2003 when in 2011 there were 9 minority head coaches, the number
 of minority head coaches has dropped off in recent years due to a lack
@@ -701,7 +699,7 @@ continue doing research, I would take a better look into the hiring
 practices of teams for entry level coaching positions as well as looking
 at the diversity of coaches in college football.
 
-Bibliography
+### Bibliography
 
 Fittipaldo, Ray. “Why Do NFL Coaches Rarely Rise from the Ranks of
 Players?” Pittsburgh Post-Gazette, Pittsburgh Post-Gazette, 22
