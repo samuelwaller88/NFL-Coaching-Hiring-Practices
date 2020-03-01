@@ -7,20 +7,20 @@ Sam Waller
 
 I studied whether or not the addition of the Rooney Rule has helped to
 solve the lack of diversity among NFL Head Coaches. The Rooney Rule was
-an intiative created in 2003 and named after long time Pittsburgh
-Steelers executive Dan Rooney who was a chairman on the league’s
-diversity committee. The rule requires that one minority candidate be
-interview for an open head coaching position. Over the years many have
-question the effectiveness of the rule, which led to a change in 2018
-that required teams to interview a minority candidate that is not
+an intiative created in 2003 named after long time Pittsburgh Steelers
+executive Dan Rooney, who was a chairman on the league’s diversity
+committee. The rule requires that at least one minority candidate be
+interviewed for an open head coaching position. Over the years, many
+have questioned the effectiveness of the rule, which led to a change in
+2018 that required teams to interview a minority candidate that is not
 employed within their organization. In 2019, TIDES, The Institute for
-Diverisity and Ethics in Sports, published a report and gave the NFL a
+Diverisity and Ethics in Sports, published a report that gave the NFL a
 D+ for diversity among head coaches due to a decrease in minority head
 coaches to its lowest figure (4 coaches) since 2003 when the rule was
 first introduced. In this study, I will identify one of the biggest
-factor that causes the lack of minority coaches, and I will give my
-opinion on how the NFL may fix their problem. In order to look at the
-data and create visializations, I downloaded the packages tidyverse and
+factors that causes the lack of minority coaches, and I will give my
+opinion on how the NFL could fix the problem. In order to look at the
+data and create visualizations, I downloaded the packages tidyverse and
 readr.
 
 ## Load Tidyverse and Readr
@@ -192,14 +192,13 @@ Minority_Hiring_Rate_ss
     ##         avg  med standard_dev    iqr
     ## 1 0.1463333 0.14    0.1169581 0.1725
 
-I first looked at the amount of minority coaches before and after the
+I first looked at the number of minority coaches before and after the
 Rooney Rule was implemented. On average from 1990 to 2019, there were 4
 minority coaches and 27 white coaches. The distribution of minority head
 coaches was skewed right by the all time high of 9 minority coaches in
-2011, while the distribution of white coaches was nearly evenly
-distributed. After 2003 the amount of minority coaches increased, and
-the amount hasn’t been below 3 minority head coaches since the rule was
-first implemented. However, the high of 9 coaches in 2019 has not been
+2011. After 2003, the amount of minority coaches increased, and the
+amount hasn’t been below 3 minority head coaches since the rule was
+first implemented. However, the high of 9 coaches in 2011 has not been
 sustainable. On average, the turnover rate of NFL head coaches was 0.22
 (22%) and the distribution was normally distributed and somewhat spread
 out with a standard deviation of 0.0562. This means that in any given
@@ -208,23 +207,24 @@ new head coach. The minimum number of head coaching vacancies was 3 in
 2005 followed by a maximum of 10 head coaching vacancies in 2006. Other
 than those two years, most years the amount of head coaching vacancies
 hovers close to the median because of the normal distribution. In order
-to determine why the amount of minority heads coaches have dropped, I
-had to find the rate minority head coaches were being hired by NFL
-teams. Since 1990, about 14% of the NFL head coaching hirings were
-minority candidates. This distribution was slightly skewed right but
-there was a high standard deviation of 0.117. This suggests that while
-only one minority candidate is hired every year given the average of 7
-head coaching vacancies, there are instances where zero minority head
-coaches are hired (1991, 1994, 1995, 1997, 1998, 2000, 2010, 2013) and
-instances where two minorities were hired (1992, 2004, 2006, 2009, 2013,
-2017) or even three minority heads coaches are hired (2011). This proves
-a problem when multiple minority head coaches are fired. If half the
-time teams are hiring one minority head coaches per year then if several
-are fired, then there isn’t a big enough applicant pool to replace them.
-For example, the dip in minority head coaches in 2019 was caused by five
-minority head coaches (Steve Wilks, Marvin Lewis, Hue Jackson, Vance
-Joseph, and Todd Bowles) being fired during and after the 2018 season
-and threre was one minority candidate (Brian Flores) hired.
+to determine why the amount of minority head coaches has dropped, I had
+to find the rate minority head coaches were being hired by NFL teams.
+Since 1990, about 14% of the NFL head coaching hirings were minority
+candidates. This distribution was slightly skewed right but there was a
+high standard deviation of 0.117. This suggests that while only one
+minority candidate is hired every year given the average of 7 head
+coaching vacancies, there are instances where zero minority head coaches
+are hired (1991, 1994, 1995, 1997, 1998, 2000, 2010, 2013) and instances
+where two minorities head coaches were hired (1992, 2004, 2006, 2009,
+2013, 2017) or even three minority heads coaches are hired (2011). This
+creates a problem when multiple minority head coaches are fired in a
+given year. If half the time teams are hiring one minority head coach
+per year, but if several are fired in the same year, then there aren’t
+enough candidates hired to replace them. For example, the dip in
+minority head coaches in 2019 was caused by five minority head coaches
+(Steve Wilks, Marvin Lewis, Hue Jackson, Vance Joseph, and Todd Bowles)
+being fired during and after the 2018 season, and there was one minority
+candidate (Brian Flores) hired.
 
 ## Overall Player Data
 
@@ -346,23 +346,21 @@ White_Defensive_Players_By_Year_ss
     ## 1 162.2667 166     20.13336  13
 
 To get a bigger picture of overall racial trends in the NFL, I looked at
-the NFL player data from 1999-2016 collect over varius censuses. The
-data ends in 2016 because the NFL has not publicaly published another
-player census since 2016. I also assumed that there were a constant
-amount of players in the league each year. Between 1999 and 2016, there
-were an average of 1524 minority players(72.9%) and 567 white players
-(27.1%). The standard deviation were equal but that was probably due the
+the NFL player data from 1999-2016 collected over various censuses. The
+data set ends in 2016 because the NFL has not published another player
+census since. I also assumed that there were a constant number of
+players in the league each year. Between 1999 and 2016, there were an
+average of 1524 minority players (72.9%) and 567 white players (27.1%).
+The standard deviation was equal, but that was probably due to the
 constant amount of players and the relatively flat lines. Starting in
 2013, the amount of minority players has increased which causes the
 distribution of minority players to skew right. To look at this trend
 further, I broke the players up between offense and defense. On offense,
 there was an average of 635 minority players and 397 whites while on
-defense there was average of 893 minority players and 166 white players.
-The difference in the numbers comes from the overall player data being
-more skewed than the individual offensive and defensive player data.
-While both the amount offensive and defensive minority players has
-increased since 2013, it is hard to tell which has seen a greater
-increase without looking a the data of individual
+defense there was an average of 893 minority players and 166 white
+players. While both the amount of offensive and defensive minority
+players has increased since 2013, it is hard to tell which has seen a
+greater increase without looking at the data of individual
 positions.
 
 ## Individual Player Data
@@ -441,24 +439,24 @@ Number_Of_Minority_LB_By_Year_ss
     ##         avg  med standard_dev  iqr
     ## 1 0.7686667 0.76   0.03020564 0.03
 
-I looked at the proportion of minority player over 5 positions between
-1999 and 2016. All of the distributions were roughly evenly
-distributated and with minimal standard deviation. On offense, the
-quarterback remained near constant around the average of 0.2 players
-were a minority. Likewise, center remained around the median of 0.22.
-The first position of were there was a change in the proportion of
-minorities was the tight end position. In 1999, 45% of tights end were
-minority. However in 2016, that percentage increased to 51%.
-Additionally, this increase began in 2013, so this one position that
-helped to increase the amount of minority players between 2013 and 2016.
-On defense, the position that most helped the trend of increasing
-minority players in the NFL was linebacker position. From 2012 to 2016,
-the number of minority players increased from 73% of players to 82% of
-the players. Lastly, I looked at minority cornerbacks who by 2016 made
-up 100% of the cornerback group. With this data, we can see that there
-are position where minority are well represented (Cornerback,
-Linebacker, Tight End) while there other position of offense where
-minorities are poorly represented (Quarterback and
+I looked at the proportion of minority players over 5 positions between
+1999 and 2016. All were roughly evenly distributed and with minimal
+standard deviation. On offense, the quarterback remained near constant
+around the average of 0.2 (20%) players were a minority. Likewise, the
+center remained around the median of 0.22 (22%). The first position of
+change in the proportion of minorities was the tight end position. In
+1999, 45% of tights end were minority. However in 2016, that percentage
+increased to 51%. Additionally, this increase began in 2013, so this is
+one position group that helped to increase the total amount of minority
+players between 2013 and 2016. On defense, the position that most helped
+the trend of increasing minority players in the NFL was the linebackers.
+From 2012 to 2016, the number of minority players increased from 73% of
+players to 82% of the players. Lastly, I looked at the proportion of
+minority cornerbacks who by 2016 made up 100% of the cornerback group.
+With this data, we can see that there are positions where minorities are
+well represented (Cornerback, Linebacker, Tight End) while there other
+positions of offense where minorities are poorly represented
+(Quarterback and
 Center).
 
 ## 2019 NFL Captain Data
@@ -488,21 +486,21 @@ Captain_100_Percent_Stacked
 
 ![](Ethics-Project-Stats_files/figure-gfm/NFL%202019%20Captain%20Data-1.png)<!-- -->
 
-The last piece of player data I analized the was proportion of
-minorities players that were voted team captain. In 2019 there were 128
-offensive and defensive captains over 29 teams as the Bears, Broncos,
-and Ravens were the only teams that didn’t have official captains during
-the 2019 season. There were roughly the same amount of offensive and
-defensive captains with offense having two more captains. Of the 63
-defensive captains, 59 of the captains were minorities while only four
-were white players. This reflects the player data as there are far more
-minority defensive players than white defensive players especially at
-the cornerback and linebacker. On offense it is more even with 26 of the
-65 captains being minority. This also reflect the individual position
-data as quarterbacks, a predominantly white position, are usually
-captains. However, the 40/60 split is still good as shows that more
-minority players are playing on offense and are gaining leadership
-positions within the team.
+The last piece of player data I analyzed was the proportion of minority
+players that were voted team captain. In 2019 there were 128 offensive
+and defensive captains over 29 teams as the Bears, Broncos, and Ravens
+were the only teams that didn’t have official captains during the 2019
+season. There were roughly the same amount of offensive and defensive
+captains with the offense having two more captains. Of the 63 defensive
+captains, 59 of the captains were minorities while only four were white
+players. This reflects the player data as there are far more minority
+defensive players than white defensive players especially at the
+cornerback and linebacker positions. On offense, it is more even with 26
+of the 65 captains being minority. This also reflect the individual
+position data as quarterbacks, a predominantly white position, are
+usually captains. However, the 40/60 split is still good as it shows
+that more minority players are playing on offense and are gaining
+leadership positions within the team.
 
 NFL Coaching Hiring
 Practices
@@ -541,16 +539,17 @@ Coach_Hiring_100_Percent_Stacked
 ![](Ethics-Project-Stats_files/figure-gfm/Coaching%20Hiring%20Practices-1.png)<!-- -->
 
 In the past 10 years, the NFL has hired 67 new head coaches. 83.6% of
-the coaching hires where either Coordinators or former head coaches at
-the NFL Level. Teams hired 21 NFL offensive coordinators 20 former head
+the coaching hires were either coordinators or former head coaches at
+the NFL Level. Teams hired 21 NFL offensive coordinators, 20 former head
 coaches, and 15 NFL defensive coordinators over that span. The other 11
 coaches were a mixture of experience levels ranging from a former CFL
-head coach to College head coaches to NFL position coaches. Lastly, from
-2010-2019, 41 of the coaches had a offensive background while 26 of the
+head coach to college head coaches to NFL position coaches. Lastly, from
+2010-2019, 41 of the coaches had an offensive background while 26 of the
 coaches were of a defensive background. Because the league is heading
-toward offensive coaches, I examined the data of NFL coordinators from
-the last 10 years to see if minorities are represented in those coaching
-positions that they are more likely to be hired for NFL Head Coaching
+toward offensive minded coaches, I examined the data of NFL coordinators
+from the last 10 years to see how minorities are represented in those
+coaching positions that are more likely to be hired for NFL Head
+Coaching
 Jobs.
 
 ## NFL Offense and Defense Coordinators Data
@@ -648,54 +647,55 @@ Offense_Coordinator_Bar
 
 ![](Ethics-Project-Stats_files/figure-gfm/NFL%20Offense%20and%20Defense%20Coordinator-3.png)<!-- -->
 
-In the last ten years, the diversity among NFL coordinators has roughly
-been the same. The number of minority NFL coordinators breifly fell to
-15.25% between 2011 and 2012 because of the increased hiring of minority
-head coaches. Between 2014 and the 2016, the number of minority
-coordinators increased as some of the minority head coaches were fired
-by their teams and a few new minority coaches were promoted to
-coordinator positions. From 2017 to 2019 the number of minority coaches
-hovered around 20%. Minority Defensive Coordinators decreased in the
-first half of the decade as 4 out of the six minority head coaching
-hires between 2010 and 2014 were defensive coordinators. Starting in
-2014, more new minority coaches were promoted to defensive coordinator
-until a maximum of minority defensive coordinators in 2018 when 11 of
-the 32 defensive coordinator were a minority. Last year, one third of
-the league defensive coordinators were a minority. While minorities
-caoches are making headway to becoming defensive coordinators, the same
-can not be said for offensive coordinators. The number of minority
-offensive coordinators was greatest in 2016 when 5 out of the 35 (some
-offenisve coordinators were replaced mid year) offensive coordinators
-were minority. This has since regressed to two minority offensive
+In the last ten years, the diversity among NFL coordinators has remained
+the same. The number of minority NFL coordinators briefly fell to 15.25%
+between 2011 and 2012 because of the increased hiring of minority head
+coaches. Between 2014 and the 2016, the number of minority coordinators
+increased as some of the minority head coaches were fired by their teams
+and a few new minority coaches were promoted to coordinator positions.
+From 2017 to 2019 the number of minority coaches hovered around 20%.
+Minority Defensive Coordinators decreased in the first half of the
+decade as four out of the six minority head coaching hires between 2010
+and 2014 were defensive coordinators. Starting in 2014, more new
+minority coaches were promoted to defensive coordinator until a maximum
+of minority defensive coordinators in 2018 when 11 of the 32 defensive
+coordinator were a minority. Last year, one third of the league’s
+defensive coordinators were a minority. While minority coaches are
+making headway to becoming defensive coordinators, the same cannot be
+said for offensive coordinators. The number of minority offensive
+coordinators was greatest in 2016 when 5 out of the 35 (some offensive
+coordinators were replaced mid year) offensive coordinators were
+minority. This has since regressed to two minority offensive
 coordinators in 2019 out of 30 total offensive coordinators.
 
 ### Conclusion
 
 While the NFL was able to succeed at first when implementing the Rooney
 Rule in 2003 when in 2011 there were 9 minority head coaches, the number
-of minority head coaches has dropped off in recent years due to a lack
-of new coaching candidates specifically on offense. As the league has
-shifted to younger offensive minded coaches like Zac Taylor of the
-Cincinnati Bengals and Sean McVay of the Los Angles Rams, there hasn’t
-been enough minority coordinators within the NFL in order to sustain the
-hiring of minorities. One way that the NFL can build out the base of
-offensive minded minority coaches that fits the hiring trend in the last
-ten years is by incentiving former minority players to get involved in
-coaching. Byron Leftwich and Eric Bieniemy, the only two minority
-offensive coordinators in the last two years are both former players. If
-NFL teams focused on hiring more former players rather than hiring
-assistant and position coaches in their mid twenties coming out of
-college than the number of minorities coaches would increase because the
-low level entry coaching positions would not always reflect the overall
-population of the United States. The percentage of minorities in the US
-is roughly 28% and on average since 2003 minority head coaches make up
-roughly 18% of NFL head coaches. The average percentage of minority head
-coaches since 2003 is more representitive of the full US population than
-the NFL minority percentage of 72%. One way to solve the hiring problem
+of minority head coaches has dropped off in recent years. One of the big
+problems is that there aren’t enough minority offensive coordinators to
+draw from for head coaching vacancies. As the league has shifted to
+younger offensive minded coaches like Zac Taylor of the Cincinnati
+Bengals and Sean McVay of the Los Angeles Rams, there hasn’t been enough
+minority coordinators within the NFL in order to sustain the hiring of
+minorities. One way that the NFL can build out the base of offensive
+minded minority coaches that fits the hiring trend in the last ten years
+is by incentivizing former minority players to get involved in coaching.
+Byron Leftwich and Eric Bieniemy, the only two minority offensive
+coordinators in the last two years are both former players. If NFL teams
+focused on hiring more former players rather than hiring assistant and
+position coaches in their mid twenties coming out of college than the
+number of minorities coaches would increase because the low level entry
+coaching positions would not always reflect the overall population of
+the United States. The percentage of minorities in the US is roughly 28%
+and on average since 2003 minority head coaches make up roughly 18% of
+NFL head coaches. The average percentage of minority head coaches since
+2003 is more representative of the full US population than the NFL
+minority player percentage of 72%. One way to solve the hiring problem
 would be to extend the Rooney Rule to the hiring of all coaching
-posistions in an effort to attract former players and give equal
+positions in an effort to attract former players and give equal
 opportunity to minorities that are coming out of college. If I was to
-continue doing research, I would take a better look into the hiring
+expand the research further, I would take a better look into the hiring
 practices of teams for entry level coaching positions as well as looking
 at the diversity of coaches in college football.
 
