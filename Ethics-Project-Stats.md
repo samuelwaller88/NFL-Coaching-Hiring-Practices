@@ -497,12 +497,12 @@ defensive captains with offense having two more captains. Of the 63
 defensive captains, 59 of the captains were minorities while only four
 were white players. This reflects the player data as there are far more
 minority defensive players than white defensive players especially at
-the cornerback and linebacker. On offense it more even with 26 of the 65
-captains being minority. This also reflect the individual position data
-as quarterbacks, a predominantly white position, are usually captains.
-However, the 40/60 split is still good as shows that more minority
-players are playing on offense and are gaining leadership positions
-within the team.
+the cornerback and linebacker. On offense it is more even with 26 of the
+65 captains being minority. This also reflect the individual position
+data as quarterbacks, a predominantly white position, are usually
+captains. However, the 40/60 split is still good as shows that more
+minority players are playing on offense and are gaining leadership
+positions within the team.
 
 NFL Coaching Hiring
 Practices
